@@ -10,7 +10,6 @@ java -version
 sudo mkdir /mapper
 sudo chmod 777 /mapper
 cd mapper/
-rm -rf map-reduce-gcp
 jar = $(curl http://metadata.google.internal/computeMetadata/v1/instance/attributes/jar -H "Metadata-Flavor: Google")
 id = jar = $(curl http://metadata.google.internal/computeMetadata/v1/instance/attributes/id -H "Metadata-Flavor: Google")
 output = $(curl http://metadata.google.internal/computeMetadata/v1/instance/attributes/output -H "Metadata-Flavor: Google")
