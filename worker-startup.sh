@@ -7,9 +7,9 @@ sudo apt-get -y install git
 java -version
 
 
-sudo mkdir /mapper
-sudo chmod 777 /mapper
-cd mapper/
+sudo mkdir /project
+sudo chmod 777 /project
+cd project/
 rm -rf map-reduce-gcp
 jar=$(curl http://metadata.google.internal/computeMetadata/v1/instance/attributes/jar -H "Metadata-Flavor: Google")
 id= $(curl http://metadata.google.internal/computeMetadata/v1/instance/attributes/id -H "Metadata-Flavor: Google")
@@ -23,4 +23,4 @@ echo jar-$jar,id-$id,output-$output, kvIp-$kvIp, kvPort-$kvPort
 git clone https://github.com/knikharg/map-reduce-gcp.git
 cd map-reduce-gcp/
 git pull
-java -jar $jar $id $kvIp $kvPort $output
+java -jar $jar $workerjar $id $kvIp $kvPort $output
