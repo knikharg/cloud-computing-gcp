@@ -18,4 +18,4 @@ echo jar-$jar,id-$id,output-$output, kvIp-$kvIp, kvPort-$kvPort, workerjar-$work
 git clone https://github.com/knikharg/map-reduce-gcp.git
 cd map-reduce-gcp/
 git pull
-java -jar $workerjar $jar  $id $kvIp $kvPort $output
+java -jar $workerjar $jar $id $kvIp $kvPort $output
