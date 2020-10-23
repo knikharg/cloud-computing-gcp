@@ -82,6 +82,14 @@ public class Worker {
 		 if (response.getResponseCode() != 200) {
 			  LOGGER.error("Error saving to keyValueStore "); 
 		 }
+		 if(Id.startsWith("r")) {
+			 KeyValue Request =KeyValue.newBuilder().setKey(Id+"_status").setValue("COMPLETED").build();
+				stub.Keyvalue.APIResponse response1 = kvstub.set(setRequest);
+				 if (response1.getResponseCode() != 200) {
+					  LOGGER.error("Error saving status to keyValueStore "); 
+				 }
+		 }
+		
 		
 	}
 	
