@@ -1,9 +1,5 @@
 #! bin/sh 
-#! bin/sh 
-sudo apt-get -y update
-sudo apt-get -y install default-jdk
-sudo apt-get -y install maven
-sudo apt-get -y install git
+
 java -version
 
 
