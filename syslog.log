@@ -1,0 +1,118 @@
+Oct 23  00:58:18 master startup-script: INFO startup-script-url: ================== Starting New Instance ==========
+========
+Oct 23  00:58:18 master startup-script: INFO startup-script-url: {disks=[{autoDelete=true, boot=true, deviceName=m1,
+ initializeParams={diskSizeGb=10, diskType=projects/kasturi-nikharge/zones/us-central1-f/diskTypes/pd-standard, sou
+rceImage=projects/kasturi-nikharge/global/images/custom-image}, kind=compute#attachedDisk, mode=READ_WRITE, type=PE
+RSISTENT}], machineType=https://www.googleapis.com/compute/v1/projects/kasturi-nikharge/zones/us-central1-f/machine
+Types/n1-standard-1, metadata={items=[{key=startup-script-url, value=gs://kasturi-nikharge/worker-startup.sh}, {key
+=jar, value=wordcount-1.0-SNAPSHOT-jar-with-dependencies.jar}, {key=id, value=m1}, {key=output, value=m1_im}, {key=
+kvIp, value=35.239.109.200}, {key=kvPort, value=5001}, {key=workerjar, value=Worker-0.0.1-SNAPSHOT-jar-with-depende
+ncies.jar}]}, name=m1, networkInterfaces=[{accessConfigs=[{kind=compute#accessConfig, name=External NAT, networkTie
+r=PREMIUM, type=ONE_TO_ONE_NAT}], kind=compute#networkInterface, subnetwork=projects/kasturi-nikharge/regions/us-ce
+ntral1/subnetworks/default}], serviceAccounts=[{email=56584533772-compute@developer.gserviceaccount.com, scopes=[ht
+tps://www.googleapis.com/auth/devstorage.full_control, https://www.googleapis.com/auth/compute]}]}
+Oct 23  00:58:19 master startup-script: INFO startup-script-url: Waiting for operation completion...
+Oct 23  00:58:19 master startup-script: INFO startup-script-url: Waiting for operation completion...
+Oct 23  00:58:24 master startup-script: INFO startup-script-url: waiting...
+Oct 23  00:58:29 master startup-script: message repeated 3 times: [ INFO startup-script-url: waiting...]
+Oct 23  00:58:30 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:58:30 AM services.GcpComputeVm crea
+teVMInstance
+Oct 23  00:58:30 master startup-script: INFO startup-script-url: INFO: Instance creation Success! ::
+Oct 23  00:58:30 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:58:30 AM services.GcpComputeVm crea
+teVMInstance
+Oct 23  00:58:30 master startup-script: INFO startup-script-url: INFO: Instance creation Success! ::
+Oct 23  00:59:39 master google-accounts: INFO Adding user knikharg to the Google sudoers group.
+Oct 23  00:59:39 master google_accounts_daemon[1454]: Adding user knikharg to group google-sudoers
+Oct 23  00:59:49 master systemd[1]: Created slice User Slice of knikharg.
+Oct 23  00:59:49 master systemd[1]: Starting User Manager for UID 1001...
+Oct 23  00:59:49 master systemd[1]: Started Session 1 of user knikharg.
+Oct 23  00:59:49 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:49 AM services.StartMapReduce ch
+eckForTaskCompletion
+Oct 23  00:59:49 master startup-script: INFO startup-script-url: INFO: Completed mapper tasks ::  m0
+Oct 23  00:59:49 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:49 AM services.StartMapReduce ch
+eckForTaskCompletion
+Oct 23  00:59:49 master startup-script: INFO startup-script-url: INFO: Key response for task ID  :: m1 ::200
+Oct 23  00:59:49 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:49 AM services.StartMapReduce ch
+eckForTaskCompletion
+Oct 23  00:59:49 master startup-script: INFO startup-script-url: INFO: Waiting for task tasks :: m1
+Oct 23  00:59:49 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:49 AM services.StartMapReduce ch
+eckForTaskCompletion
+Oct 23  00:59:49 master startup-script: INFO startup-script-url: INFO: Completed mapper tasks ::  m1
+Oct 23  00:59:49 master startup-script: INFO startup-script-url: ================== Deleting Instance m0 ===========
+=======
+Oct 23  00:59:50 master startup-script: INFO startup-script-url: ================== Deleting Instance m0 ===========
+=======
+Oct 23  00:59:50 master startup-script: INFO startup-script-url: ================== Deleting Instance m1 ===========
+=======
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: ================== Deleting Instance m1 ===========
+=======
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:51 AM services.StartMapReduce ru
+nMapred
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: INFO: Assigning reducer tasks
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:51 AM services.StartMapReduce as
+signTasksToReducers
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: INFO: Reducer tasks assigned
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:51 AM services.StartMapReduce as
+signTasksToReducers
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: INFO: Reducer tasks assigned
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:51 AM services.StartMapReduce la
+mbda$writeToReducerIntermediate$14
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: INFO: Reducer file written  :: /master/map-reduce-g
+cp/r0.txt
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:51 AM services.StartMapReduce la
+mbda$writeToReducerIntermediate$14
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: INFO: Reducer file written  :: /master/map-reduce-g
+cp/r1.txt
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:51 AM services.StartMapReduce la
+mbda$spawnTasks$13
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: INFO: Trigger mapper creation r0
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: ================== Listing Compute Engine Instances
+ ==================
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: Oct 23 , 2020 12:59:51 AM services.StartMapReduce la
+mbda$spawnTasks$13
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: INFO: Trigger mapper creation r1
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: ================== Listing Compute Engine Instances
+
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: ================== Starting New Instance ==========
+========
+Oct 23  00:59:51 master startup-script: INFO startup-script-url: {disks=[{autoDelete=true, boot=true, deviceName=r1,
+ initializeParams={diskSizeGb=10, diskType=projects/kasturi-nikharge/zones/us-central1-f/diskTypes/pd-standard, sou
+rceImage=projects/kasturi-nikharge/global/images/custom-image}, kind=compute#attachedDisk, mode=READ_WRITE, type=PE
+RSISTENT}], machineType=https://www.googleapis.com/compute/v1/projects/kasturi-nikharge/zones/us-central1-f/machine
+Types/n1-standard-1, metadata={items=[{key=startup-script-url, value=gs://kasturi-nikharge/worker-startup.sh}, {key
+=jar, value=wcreducer-0.0.1-SNAPSHOT-jar-with-dependencies.jar}, {key=id, value=r1}, {key=output, value=output_wc},
+ {key=kvIp, value=35.239.109.200}, {key=kvPort, value=5001}, {key=workerjar, value=Worker-0.0.1-SNAPSHOT-jar-with-d
+ependencies.jar}]}, name=r1, networkInterfaces=[{accessConfigs=[{kind=compute#accessConfig, name=External NAT, netw
+orkTier=PREMIUM, type=ONE_TO_ONE_NAT}], kind=compute#networkInterface, subnetwork=projects/kasturi-nikharge/regions
+/us-central1/subnetworks/default}], serviceAccounts=[{email=56584533772-compute@developer.gserviceaccount.com, scop
+es=[https://www.googleapis.com/auth/devstorage.full_control, https://www.googleapis.com/auth/compute]}]}
+Oct 23  00:59:52 master startup-script: INFO startup-script-url: Waiting for operation completion...
+Oct 23  00:59:52 master startup-script: INFO startup-script-url: Waiting for operation completion...
+Oct 23  00:59:57 master startup-script: INFO startup-script-url: waiting...
+Oct 23  01:00:03 master startup-script: message repeated 3 times: [ INFO startup-script-url: waiting...]
+Oct 23  01:00:03 master startup-script: INFO startup-script-url: Oct 23 , 2020 1:00:03 AM services.GcpComputeVm creat
+eVMInstance
+Oct 23  01:00:03 master startup-script: INFO startup-script-url: INFO: Instance creation Success! ::
+Oct 23  01:00:03 master startup-script: INFO startup-script-url: Oct 23 , 2020 1:00:03 AM services.GcpComputeVm creat
+eVMInstance
+Oct 23  01:00:03 master startup-script: INFO startup-script-url: INFO: Instance creation Success! ::
+Oct 23  01:01:24 master startup-script: INFO startup-script-url: Oct 23 , 2020 1:01:24 AM services.StartMapReduce che
+ckForTaskCompletion
+Oct 23  01:01:24 master startup-script: INFO startup-script-url: INFO: Completed task tasks ::  r0
+Oct 23  01:01:24 master startup-script: INFO startup-script-url: Oct 23 , 2020 1:01:24 AM services.StartMapReduce che
+ckForTaskCompletion
+Oct 23  01:01:24 master startup-script: INFO startup-script-url: INFO: Task status ::
+Oct 23  01:01:27 master startup-script: INFO startup-script-url: Oct 23 , 2020 1:01:27 AM services.StartMapReduce che
+ckForTaskCompletion
+Oct 23  01:01:27 master startup-script: INFO startup-script-url: INFO: Completed task tasks ::  r1
+Oct 23  01:01:27 master startup-script: INFO startup-script-url: ================== Deleting Instance r0 ===========
+=======
+Oct 23  01:01:28 master startup-script: INFO startup-script-url: ================== Deleting Instance r0 ===========
+=======
+Oct 23  01:01:28 master startup-script: INFO startup-script-url: ================== Deleting Instance r1 ===========
+=======
+Oct 23  01:01:29 master startup-script: INFO startup-script-url: ================== Deleting Instance r1 ===========
+=======
+Oct 23  01:01:29 master startup-script: INFO startup-script-url: Oct 23 , 2020 1:01:29 AM services.StartMapReduce run
+Mapred
+Oct 23  01:01:29 master startup-script: INFO startup-script-url: INFO: Returning to user program
