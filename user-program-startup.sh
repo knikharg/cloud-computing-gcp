@@ -7,9 +7,11 @@
 
 java -version
 
+#make changes to configuration.properties under resources to make any changes
+
 git clone https://github.com/knikharg/map-reduce-gcp.git
 cd map-reduce-gcp/
 git pull
-java -jar userprogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+java -jar userprogram/target/userprogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 
 
