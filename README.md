@@ -66,19 +66,19 @@ uploaded to cloud storage.
 All the instances created are created from a custom-image created from an instance of the
 following configuration. Additionally, the custom-image has required dependencies as well.
 
-● Machine type n1-standard-1 (1 vCPU, 3.75 GB memory)
+    ● Machine type n1-standard-1 (1 vCPU, 3.75 GB memory)
 
-● Zone us-central1-a
+    ● Zone us-central1-a
 
-● Firewalls Rules - Allow HTTP traffic & Allow HTTPS traffic
+    ● Firewalls Rules - Allow HTTP traffic & Allow HTTPS traffic
 
-● CPU platform Intel Haswell
+    ● CPU platform Intel Haswell
 
-● Image - Ubuntu-1804-bionic-v20201014
+    ● Image - Ubuntu-1804-bionic-v20201014
 
-● Size 10 GB
+    ● Size 10 GB
 
-● Allow full access to all Cloud API
+    ● Allow full access to all Cloud API
 
 ### Performance Details
 
