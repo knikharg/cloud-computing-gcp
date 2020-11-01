@@ -6,25 +6,24 @@
 
 The Application contains following processes which are created as instances -
 
-  ● UserProgram -> trigger
+    ● UserProgram -> trigger
 
-  ● Keyvalues store
+    ● Keyvalues store
 
-  ● mapReduce
+    ● mapReduce
 
-  ● Worker -> executes mappers and reducers
+    ● Worker -> executes mappers and reducers
 
 
 The start of program is through the UserProgram Trigger, which includes
 
-  ● init-cluster, launching key value store and map-reduce master
+    ● init-cluster, launching key value store and map-reduce master
 
-  ● call map reduce - run_mapreduce
+    ● call map reduce - run_mapreduce
 
-  ● Delete instances on completion
+    ● Delete instances on completion
 
-  ● Once the VM instances are launched, connection to the keyvaluestore and master is
-  established.
+    ● Once the VM instances are launched, connection to the keyvaluestore and master is established.
 
 The input file is uploaded to gcloud storage, run-mapreduce is called, wherein all the information
 like mappers, reducers, kv ip address port is passed through gRPC connection from
