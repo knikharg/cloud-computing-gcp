@@ -47,12 +47,17 @@ case need not be a blocking process, making the application a bit faster.
 
 The user configuration is present is UserProgram -> resources -> configuration.properties,
 change jars to
-mapper.jar = invertedindexmapper-0.0.1-SNAPSHOT-jar-with-dependencies.jar reducer.jar =
+mapper.jar = invertedindexmapper-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+
+reducer.jar = invertedindexreducer-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+
 Custom image with dependencies -> custom-image is created so that each instance does not
 have to individually download dependencies, which was noted to be time consuming.
 Start-up scripts passed through metadata while creating an instance is used to run jars on VMs.
+
 The start-up scripts are initially uploaded to cloud storage before instance creation through code
 itself.
+
 Startup scripts and the input file, assuming the input file might be huge, are the only files
 uploaded to cloud storage.
 
@@ -61,6 +66,7 @@ uploaded to cloud storage.
 
 All the instances created are created from a custom-image created from an instance of the
 following configuration. Additionally, the custom-image has required dependencies as well.
+
 ● Machine type n1-standard-1 (1 vCPU, 3.75 GB memory)
 
 ● Zone us-central1-a
@@ -91,4 +97,6 @@ into the VM.
 
 ### How to run code
 
+```
 sh user-program-startup.sh
+```
