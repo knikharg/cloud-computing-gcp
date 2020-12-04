@@ -63,8 +63,7 @@ uploaded to cloud storage.
 
 ### Virtual Machines on Google Cloud
 
-All the instances created are created from a custom-image created from an instance of the
-following configuration. Additionally, the custom-image has required dependencies as well.
+All the instances are created from a custom-image of the following configuration. Additionally, the custom-image has required dependencies as well.
 
     ● Machine type n1-standard-1 (1 vCPU, 3.75 GB memory)
 
@@ -83,13 +82,12 @@ following configuration. Additionally, the custom-image has required dependencie
 ### Performance Details
 
 The end-to-end program execution takes about 8 minutes, when tested for 2 mappers and 2
-reducers. Most of the time spent is to bring up the instance, hence my own custom image ->
-custom-image was created.
+reducers. Most of the time spent is to bring up the instance, hence my own custom image -> custom-image was created.
 
 ### Future Scope
 
 Improvements to the current design would make the system completely fault tolerant. Since,
-right now the keyvaluestore is a single point of failure, have a distributed keyvaluestore.
+right now the keyvaluestore is a single point of failure, having a distributed keyvaluestore would help.
 Further, I would like to decouple the worker, mapper and reducers more.
 The submitted files contain-cloud logs obtained from GUI as well as syslog obtained from ssh
 into the VM.
