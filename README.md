@@ -88,8 +88,8 @@ reducers. Most of the time spent is to bring up the instance, hence my own custo
 
 Improvements to the current design would make the system completely fault tolerant. Since,
 right now the keyvaluestore is a single point of failure, having a distributed keyvaluestore would help.
-Further, I would like to decouple the worker, mapper and reducers more.
-The submitted files contain-cloud logs obtained from GUI as well as syslog obtained from ssh
+Furthermore, I would like to decouple the worker, mapper and reducers.
+The files contain-cloud logs obtained from GUI as well as syslog obtained from ssh
 into the VM.
 
 ### How to run code
