@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "stub";
+
+service KeyValueStore {
+    rpc get(Key) returns (KeyValue);
+    rpc set(KeyValue) returns (APIResponse);
+}
+
+message Key {
+    string key = 1;
+}
+
+message KeyValue {
+    int32 responseCode = 1;
+    string key = 2;
+    string value = 3;
+}
+
+message APIResponse {
+    int32 responseCode = 1;
+}
+

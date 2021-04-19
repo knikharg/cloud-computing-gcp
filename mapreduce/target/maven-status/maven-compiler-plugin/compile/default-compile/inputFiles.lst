@@ -1,0 +1,13 @@
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/stub/ShutDownGrpc.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/stub/Keyvalue.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/services/Mapper.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/stub/Master.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/services/Reducer.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/services/StartMapReduce.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/stub/KeyValueStoreGrpc.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/services/GcpComputeVm.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/mapreduce/Master.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/mapreduce/MasterHelper.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/mapreduce/TaskStatus.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/stub/StartMapReduceGrpc.java
+/home/kasturi/git/CloudComputing/mapreduce/src/main/java/services/ShutDown.java
